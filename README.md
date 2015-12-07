@@ -7,11 +7,14 @@
 </br>
 ![image](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image01.png)
 # 分类菜单
-左边是TableView, 右边为CollectionView, 选中tableView中的分类, 右边会自动跳转小分类
+左边是TableView, 右边为CollectionView,
+</br>
+选中tableView中的分类, 右边会自动跳转小分类
 </br>
 ![image](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image02.png)
 # 大图列表
 右上角切到小图界面
+</br>
 集成MJRefresh的上拉刷新和下拉加载, 动画为自带的"吃包子"动画
 </br>
 ![image](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image03.png)
@@ -19,12 +22,15 @@
 ![image](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image04.png)
 # 详情界面
 主体为TableView, 自定义一个View作为tableHeaderView
+</br>
 点击图片上的"爱心"button可以完成收藏
+</br>
 如果"爱心"变为高亮,则收藏成功
 </br>
 ![imag主体为TableView, 自定义一个ScrollerView作为tableHeaderViewe](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image05.png)
 # 收藏界面
 显示收藏的数据
+</br>
 使用FlieManager写plist文件实现收藏
 </br>
 ![image](https://github.com/JackChen1994/Cook_MVVM/blob/master/Images/Image06.png)
