@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>204601</key>
+	<string>菜谱名称不能为空</string>
+	<key>204602</key>
+	<string>查询不到相关信息</string>
+	<key>204603</key>
+	<string>菜谱名过长</string>
+	<key>204604</key>
+	<string>错误的标签ID (如果你看见这个,请联系作者更新数据)</string>
+	<key>204605</key>
+	<string>查询不到数据</string>
+	<key>204606</key>
+	<string>错误的菜谱ID (如果你看见这个,请联系作者更新数据)</string>
+	<key>10001</key>
+	<string>错误的请求KEY</string>
+	<key>10002</key>
+	<string>该KEY无请求权限</string>
+	<key>10003</key>
+	<string>KEY过期</string>
+	<key>10004</key>
+	<string>错误的OPENID</string>
+	<key>10005</key>
+	<string>应用未审核超时，请提交认证</string>
+	<key>10007</key>
+	<string>未知的请求源</string>
+	<key>10008</key>
+	<string>被禁止的IP</string>
+	<key>10009</key>
+	<string>被禁止的KEY</string>
+	<key>10011</key>
+	<string>当前IP请求超过限制</string>
+	<key>10012</key>
+	<string>请求超过次数限制</string>
+	<key>10013</key>
+	<string>测试KEY超过请求限制</string>
+	<key>10014</key>
+	<string>系统内部异常，请重试</string>
+	<key>10020</key>
+	<string>接口维护</string>
+	<key>10021</key>
+	<string>接口停用</string>
+</dict>
+</plist>

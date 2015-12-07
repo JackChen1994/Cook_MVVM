@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="138"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCH-TS-tm5">
+                        <rect key="frame" x="0.0" y="120" width="120" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lzq-1y-8CL">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lzq-1y-8CL" secondAttribute="height" multiplier="1:1" id="Dyv-Nt-Pli"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="QCH-TS-tm5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5AL-XX-PVM"/>
+                <constraint firstItem="Lzq-1y-8CL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6a7-Rj-2F3"/>
+                <constraint firstAttribute="trailing" secondItem="Lzq-1y-8CL" secondAttribute="trailing" id="SzK-l6-fKZ"/>
+                <constraint firstItem="QCH-TS-tm5" firstAttribute="top" secondItem="Lzq-1y-8CL" secondAttribute="bottom" id="kGv-GK-fmD"/>
+                <constraint firstAttribute="bottom" secondItem="QCH-TS-tm5" secondAttribute="bottom" id="oEU-XX-Wl3"/>
+                <constraint firstAttribute="trailing" secondItem="QCH-TS-tm5" secondAttribute="trailing" id="r0z-2i-g3u"/>
+                <constraint firstItem="Lzq-1y-8CL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x1z-mS-PsW"/>
+            </constraints>
+            <size key="customSize" width="120" height="138"/>
+            <connections>
+                <outlet property="foodImageView" destination="Lzq-1y-8CL" id="mky-aK-UBI"/>
+                <outlet property="titleLabel" destination="QCH-TS-tm5" id="tqu-AS-yub"/>
+            </connections>
+            <point key="canvasLocation" x="506" y="364"/>
+        </collectionViewCell>
+    </objects>
+</document>
