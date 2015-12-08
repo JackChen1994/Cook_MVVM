@@ -7,6 +7,7 @@
 //
 
 #import "TableAndCollectionView.h"
+#import "Masonry.h"
 
 #define DefaultInterval    10   //默认间距
 
@@ -57,7 +58,7 @@
 }
 
 - (void)initTableView {
-    self.tableView = [[UITableView alloc]initWithFrame:self.bounds];
+    self.tableView = [[UITableView alloc]init];
 }
 
 - (void)initCollectionView {
@@ -70,12 +71,24 @@
     [self.collectionView removeFromSuperview];
     [self.tableView reloadData];
     [self addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.bottom.equalTo(self.mas_bottom);
+        make.left.equalTo(self.mas_left);
+        make.right.equalTo(self.mas_right);
+    }];
 }
 
 - (void)showCollectionView {
     [self.tableView removeFromSuperview];
     [self.collectionView reloadData];
     [self addSubview:self.collectionView];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.bottom.equalTo(self.mas_bottom);
+        make.left.equalTo(self.mas_left);
+        make.right.equalTo(self.mas_right);
+    }];
 }
 
 @end

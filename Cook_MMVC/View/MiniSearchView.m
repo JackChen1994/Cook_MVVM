@@ -8,6 +8,7 @@
 
 #import "MiniSearchView.h"
 #import "ColorManger.h"
+#import "Masonry.h"
 
 @interface MiniSearchView()<UITextFieldDelegate>
 
@@ -30,14 +31,19 @@
 }
 
 - (void)initTextField {
-    CGRect frame = CGRectMake(10, (self.bounds.size.height-30)/2, self.bounds.size.width-20, 30);
-    self.textField = [[UITextField alloc]initWithFrame:frame];
+    self.textField = [[UITextField alloc]init];
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
     self.textField.placeholder = @"搜索你想要的菜肴";
     self.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.textField.returnKeyType = UIReturnKeySearch;
     self.textField.delegate = self;
     [self addSubview:self.textField];
+    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top).with.offset((self.bounds.size.height-30)/2);
+        make.bottom.equalTo(self.mas_bottom).with.offset(-(self.bounds.size.height-30)/2);
+        make.left.equalTo(self.mas_left).with.offset(10);
+        make.right.equalTo(self.mas_right).with.offset(-10);
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
